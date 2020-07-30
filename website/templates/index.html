@@ -33,8 +33,9 @@
 <!-- Extended default form grid -->
 <div class=form>
 <h2>Fill Below (ചുവടെ പൂരിപ്പിക്കുക)</h2>
-<form>
-  <!-- Default input -->
+<form method="POST">
+    {% csrf_token %}
+<!-- Default input -->
   <div class="form-group">
     <label for="inputAddress">Name (പേര്)</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="Enter Name (പേര് നൽകുക)">
