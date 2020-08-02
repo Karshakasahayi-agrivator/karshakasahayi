@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Sample Page</title>
+  <title>Karshaka Sahayi</title>
   <!-- MDB icon -->
   <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"> -->
   <!-- Font Awesome -->
@@ -19,97 +19,85 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link href="//db.onlinewebfonts.com/c/f97196963cd19b4830b860a14bce7a37?family=Stem" rel="stylesheet" type="text/css"/> 
+
   <link rel="stylesheet" href="css/pagestyle.css">
 </head>
 <body>
+
+
 
   <!-- Start your project here-->  
 <!-- Just an image -->
 <nav class="navbar navbar-dark color">
   <a class="navbar-brand" href="#">
-    <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="mdb logo">
+    <!-- <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="mdb logo"> -->
   </a>
 </nav>
+
+
+
+
 <!-- Extended default form grid -->
-<div class=form>
-<h2>Fill Below (ചുവടെ പൂരിപ്പിക്കുക)</h2>
 <form method="POST">
     {% csrf_token %}
-<!-- Default input -->
+<div class="form">
+<h2>Fill Below (ചുവടെ പൂരിപ്പിക്കുക)</h2>
+
+  <!-- Default input -->
   <div class="form-group">
-    <label for="inputAddress">Name (പേര്)</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Enter Name (പേര് നൽകുക)">
+    <label for="inputName">Name (പേര്)</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Enter Name (പേര് നൽകുക)">
   </div>
   <!-- Default input -->
   <div class="form-group">
-    <label for="inputAddress2">Phone Number (ഫോൺ നമ്പർ)</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Enter Phone Number (ഫോൺ നമ്പർ നൽകുക)">
+    <label for="inputPhNo">Phone Number (ഫോൺ നമ്പർ)</label>
+    <input type="number" class="form-control" id="inputPhNo" placeholder="Enter Phone Number (ഫോൺ നമ്പർ നൽകുക)">
   </div>
+    <!-- Default input -->
+    <div class="form-group">
+      <label for="inputEmail">E-Mail (ഇ-മെയിൽ )</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Enter E-Mail(ഇ-മെയിൽ നൽകുക)">
+    </div>
    <!-- Default input -->
    <div class="form-group">
     <label for="inputAddress">Address (വിലാസം)</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="Enter Address (വിലാസം നൽകുക)">
   </div>
-   <!-- Basic dropdown -->
-   <button class="btn color dropdown-toggle mr-4" type="button" data-toggle="dropdown"
-   aria-haspopup="true" aria-expanded="false">Number Of Workers Required (ആവശ്യമായ തൊഴിലാളികളുടെ എണ്ണം) </button>
-
- <div class="dropdown-menu">
-   <a class="dropdown-item" href="#">1</a>
-   <a class="dropdown-item" href="#">2</a>
-   <a class="dropdown-item" href="#">3</a>
-   <div class="dropdown-divider"></div>
-   <a class="dropdown-item" href="#">More (കൂടുതൽ)</a>
+    <!-- Default input -->
+    <div class="form-group">
+      <label for="inputWorkerNumber">Number Of Workers Required (ആവശ്യമായ തൊഴിലാളികളുടെ എണ്ണം)</label>
+      <input type="number" class="form-control" id="inputWorkerNumber" placeholder="Enter Number Of Workers Required (ആവശ്യമായ തൊഴിലാളികളുടെ എണ്ണം നൽകുക)">
+    </div>
+    <!-- Default input -->
+    <div class="form-group">
+      <label for="inputDate">Required Date(ആവശ്യമായ തീയതി)</label>
+      <input type="date" class="form-control" id="inputDate" placeholder="Enter Required Date(ആവശ്യമായ തീയതി നൽകുക)">
+    </div>
+ <div class="form-group text-center">
+  <button type="button" class="btn color btn-lg ">Calculate Total (തുക കണക്കാക്കുക)</button>
  </div>
- <!-- Basic dropdown -->
- <div class="text-center">
-  <button type="submit" class="btn color btn-lg ">Sumbit (സമർപ്പിക്കുക)</button>
 
- </div>
-</form>
-&nbsp;
-&nbsp;
-&nbsp;
-<h2>Calculations</h2>
-<!-- Horizontal material form -->
-<form>
-  <!-- Grid row -->
-  <div class="form-group row">
-        <!-- Default input -->
-    <!-- Material input -->
-    <label for="inputEmail3MD" class="col-sm-2 col-form-label">Given Count</label>
-    <div class="col-sm-10">
-      <div class="md-form mt-0">
-        <input type="email" class="form-control" id="inputEmail3MD" placeholder="" disabled>
-      </div>
-    </div>
-  </div>
-  <!-- Grid row -->
 
-  <!-- Grid row -->
-  <div class="form-group row">
-    <!-- Material input -->
-    <label for="inputPassword3MD" class="col-sm-2 col-form-label">Total Price</label>
-    <div class="col-sm-10">
-      <div class="md-form mt-0">
-        <input type="password" class="form-control" id="inputPassword3MD" placeholder="">
-      </div>
-    </div>
-  </div>
-  <!-- Grid row -->
 
-  <!-- Grid row -->
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn color btn-lg">Proceed </button>
-    </div>
-  </div>
-  <!-- Grid row -->
-</form>
-<!-- Horizontal material form -->
-</div>
-<!-- Extended default form grid -->
  
+
+<h2>Calculations</h2>
+  <div class="row">
+    <div class="form-group col">
+      <label for="workercount">Given Count (ആവശ്യപ്പെട്ട തൊഴിലാളികളുടെ എണ്ണം)</label>
+      <input type="number" id="workercount" class="form-control"disabled>
+    </div>
+    <div class="form-group col">
+      <label for="totalprice" >Total Price (ആകെ തുക)</label>
+    <input type="number" id="totalprice" class="form-control"disabled>
+    </div>
+  </div>
+  <div class="form-group text-center">
+      <button type="submit" class="btn color btn-lg ">Submit Request (സമർപ്പിക്കുക)</button>
+     </div>
+</div>
+</form>
+
 
   <!-- End your project here-->
   <!-- Footer -->
