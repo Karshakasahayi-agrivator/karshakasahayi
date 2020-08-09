@@ -11,6 +11,7 @@ def index(request):
             obj.phone=form.cleaned_data['phone']
             obj.email=form.cleaned_data['email']
             obj.address=form.cleaned_data['address']
+            obj.workers=form.cleaned_data['workers']
             obj.date_required=form.cleaned_data['date_required']
             obj.save()
             return render(request,'submit.html')
