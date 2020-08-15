@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'website.apps.WebsiteConfig'
+
 
 ]
 
@@ -128,8 +128,6 @@ EMAIL_PORT=587
 EMAIL_HOST_USER='mail id'
 EMAIL_HOST_PASSWORD='password'
 EMAIL_USE_TLS=True
-=======
-
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
